@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            background: rgb(131, 58, 180);
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 88, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+            display: inline-block;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            height: 400px;
+            width: 400px;
+            border: 2px red solid;
+            border-radius: 10%;
+        }
+        
+        .hi1 {
+            height: 70px;
+            width: 70px;
+            border-radius: 10%;
+            background: rgb(131, 58, 180);
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(29, 253, 224, 1) 50%, rgba(252, 176, 69, 1) 100%);
+        }
+        
+        .hi1:hover {
+            background: rgb(54, 224, 237);
+            background: radial-gradient(circle, rgba(54, 224, 237, 1) 0%, rgba(70, 77, 252, 1) 100%);
+            box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+        }
+        
+        #ary {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ary">
+        <form name="form2">
+            <input type="text" name="answer" style="width: 90%; height:70px; font-size:30px; ">
+            <br>
+            <br>
+
+            <input type="button" value="1" class="hi1" onclick="form2.answer.value +='1' ">
+            <input type="button" value="2" class="hi1" onclick="form2.answer.value +='2' ">
+            <input type="button" value="3" class="hi1" onclick="form2.answer.value +='3' ">
+            <input type="button" value="+" class="hi1" onclick="form2.answer.value +='+' ">
+            <input type="button" value="-" class="hi1" onclick="form2.answer.value +='-' ">
+
+
+            <br>
+            <input type="button" value="4" class="hi1" onclick="form2.answer.value +='4' ">
+            <input type="button" value="5" class="hi1" onclick="form2.answer.value +='5' ">
+            <input type="button" value="6" class="hi1" onclick="form2.answer.value +='6' ">
+            <input type="button" value="*" class="hi1" onclick="form2.answer.value +='*' ">
+            <input type="button" value="/" class="hi1" onclick="form2.answer.value +='/' ">
+
+
+            <br>
+            <input type="button" value="7" class="hi1" onclick="form2.answer.value +='7' ">
+            <input type="button" value="8" class="hi1" onclick="form2.answer.value +='8' ">
+            <input type="button" value="9" class="hi1" onclick="form2.answer.value +='9' ">
+            <input type="button" value="0" class="hi1" onclick="form2.answer.value +='0' ">
+            <input type="button" value="%" class="hi1" onclick="form2.answer.value +='%' ">
+            <br>
+            <input type="button" value="." class="hi1" onclick="form2.answer.value +='.' ">
+            <input type="button" value="=" class="hi1" onclick="form2.answer.value=eval(form2.answer.value)">
+            <input type="button" id="clear" class="hi1" value="clear" style="width: 55%; height: 70px;" onclick="form2.answer.value =' ' ">
+
+
+
+
+    </div>
+
+
+    </form>
+</body>
+
+</html>
